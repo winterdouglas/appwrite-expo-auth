@@ -8,7 +8,6 @@ export const useOAuth2Session = () => {
   const createSession = useCallback(async (provider: OAuthProvider) => {
     try {
       const authUrl = account.createOAuth2Session(provider);
-      console.log(authUrl);
 
       if (!authUrl) return;
 
